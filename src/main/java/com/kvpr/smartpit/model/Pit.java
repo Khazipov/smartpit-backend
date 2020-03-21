@@ -10,9 +10,14 @@ public class Pit {
     Long id;
     Double latitude;
     Double longitude;
-    Integer category;
+    Integer category = 0;
 
     public Pit() {
+    }
+
+    public Pit(Double latitude, Double longitude) {
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
     public Pit(Double latitude, Double longitude, Integer category) {
