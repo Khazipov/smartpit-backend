@@ -16,7 +16,7 @@
 
 2. Доставить на сервер архив target/smartpit-*.jar
 
-3. java -jar smartpit-*.jar <&- 1>log.log 2>error_log.log на AWS сервере (~/www/)
+3. java -jar smartpit-*.jar <&- 1>log.log 2>error_log.log & на AWS сервере (~/www/)
 
 ## Команда
 
