@@ -17,4 +17,8 @@ public class PitService {
         return pitDao.findAll();
     }
 
+    public void savePits(List<Pit> pits) {
+        pitDao.saveAll(pits);
+    }
+
 }
