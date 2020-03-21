@@ -4,10 +4,7 @@ import com.kvpr.smartpit.model.Pit;
 import com.kvpr.smartpit.service.PitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -29,8 +26,14 @@ public class PitController {
 
     @PostMapping("/api/pits/upload")
     public ResponseEntity<String> uploadMultiplePits(@RequestBody List<Pit> pits) {
-       pitService.savePits(pits);
-       return ResponseEntity.ok("");
+        pitService.savePits(pits);
+        return ResponseEntity.ok("Your geopoints was saved in our database.");
+    }
+
+    @DeleteMapping("/api/pits/clear")
+    public ResponseEntity<String> deleteAll() {
+        pitService.deleteAllPits();
+        return ResponseEntity.ok("All pits was deleted from our database.");
     }
 
 

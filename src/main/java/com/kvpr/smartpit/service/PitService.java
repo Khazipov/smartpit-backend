@@ -21,4 +21,7 @@ public class PitService {
         pitDao.saveAll(pits);
     }
 
+    public void deleteAllPits() {
+        pitDao.deleteAll();
+    }
 }
