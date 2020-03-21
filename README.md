@@ -12,11 +12,11 @@
 
 ### Installing
 
-1. Собрать maven-ом jar: *mvn clean package*
+1. Собрать maven-ом jar: `mvn clean package`
 
-2. Доставить на сервер архив target/smartpit-*.jar
+2. Доставить на сервер архив *target/smartpit-\*.jar*
 
-3. java -jar smartpit-*.jar <&- 1>log.log 2>error_log.log & на AWS сервере (~/www/)
+3. `java -jar smartpit-*.jar <&- 1>log.log 2>error_log.log &`  на AWS сервере (~/www/)
 
 ## Команда
 
