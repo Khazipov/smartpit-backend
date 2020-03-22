@@ -1,6 +1,7 @@
 package com.kvpr.smartpit.model;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @Table
@@ -10,6 +11,7 @@ public class Pit {
     Long id;
     Double latitude;
     Double longitude;
+    Date dateUploaded;
     Integer category = 0;
 
     public Pit() {
@@ -24,6 +26,14 @@ public class Pit {
         this.latitude = latitude;
         this.longitude = longitude;
         this.category = category;
+    }
+
+    public Date getDateUploaded() {
+        return dateUploaded;
+    }
+
+    public void setDateUploaded(Date dateUploaded) {
+        this.dateUploaded = dateUploaded;
     }
 
     public Long getId() {

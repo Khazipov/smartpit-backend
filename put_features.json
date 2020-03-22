@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.309421385,
+          59.949080428
+        ]
+      },
+      "properties": {
+        "yamkaName": "yamkaTimura2"
+      }
+    }
+  ]
+}
